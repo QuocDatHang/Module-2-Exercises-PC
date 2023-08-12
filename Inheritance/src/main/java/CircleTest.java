@@ -6,7 +6,9 @@ public class CircleTest {
         System.out.println(circle);
         circle = new Circle(3.5);
         System.out.println(circle);
-        circle = new Circle(3.5, "indigo", false);
+        circle = new Circle(10, "indigo", false);
+        System.out.println(circle);
+        circle.resize(150);
         System.out.println(circle);
     }
 }

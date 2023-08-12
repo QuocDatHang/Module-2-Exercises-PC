@@ -6,5 +6,8 @@ public class SquareTest {
         System.out.println(square);
         square = new Square(5.0, "red", false);
         System.out.println(square);
+
+        square.resize(50);
+        System.out.println(square);
     }
 }
