@@ -19,7 +19,7 @@ public class ResizeableShape {
             if (s1 instanceof Circle) {
                 Circle s2 = (Circle) s1;
                 System.out.printf("%s %.3f \n", "Circle : ", s2.getArea());
-            } else if (s1 instanceof Rectangle) {
+            } else if (s1 instanceof Rectangle && !(s1 instanceof Square)) {
                 Rectangle s2 = (Rectangle) s1;
                 System.out.printf("%s %.3f \n", "Rectangle : ", s2.getArea());
             } else if (s1 instanceof Square) {
@@ -39,11 +39,12 @@ public class ResizeableShape {
             if (s1 instanceof Circle) {
                 Circle s2 = (Circle) s1;
                 System.out.printf("%s %.3f \n", "Circle : ", s2.getArea());
-            } else if (s1 instanceof Rectangle) {
+            } else if (s1 instanceof Rectangle && !(s1 instanceof Square)) {
                 Rectangle s2 = (Rectangle) s1;
                 System.out.printf("%s %.3f \n", "Rectangle : ", s2.getArea());
             } else if (s1 instanceof Square) {
                 Square s2 = (Square) s1;
+                s2.howToColor();
                 System.out.printf("%s %.3f \n", "Square : ", s2.getArea());
             } else {
                 System.out.println("The shape is not recognized as any specific type");
