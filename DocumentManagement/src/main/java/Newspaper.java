@@ -1,16 +1,18 @@
-public class Newspaper extends Document {
-    int dayIssue;
+import java.time.LocalDate;
 
-    public Newspaper(String id, String publisher, int releaseNumber, int dayIssue) {
+public class Newspaper extends Document {
+    LocalDate dayIssue;
+
+    public Newspaper(String id, String publisher, int releaseNumber, LocalDate dayIssue) {
         super(id, publisher, releaseNumber);
         this.dayIssue = dayIssue;
     }
 
-    public int getDayIssue() {
+    public LocalDate getDayIssue() {
         return dayIssue;
     }
 
-    public void setDayIssue(int dayIssue) {
+    public void setDayIssue(LocalDate dayIssue) {
         this.dayIssue = dayIssue;
     }
     @Override

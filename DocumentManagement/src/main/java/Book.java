@@ -30,6 +30,5 @@ public class Book extends Document {
                 + "releaseNumber = " + releaseNumber + " | "
                 + "authorName = " + authorName + " | "
                 + "numberPaper = " + numberPaper + "}";
-
     }
 }
