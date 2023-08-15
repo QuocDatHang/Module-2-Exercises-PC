@@ -18,11 +18,9 @@ public class DocumentManagement {
         return true;
      }
     public void showInfo(){
-//        System.out.printf("%10s | %10s | %10s | %10s | %10s \n", "id", "publisher", "releaseNumber", "authorName", "numberPaper");
-        this.documentList.forEach(System.out::println);
-//        this.documentList.forEach(document -> {
-//
-//        });
+        this.documentList.forEach(document -> {
+            System.out.println(document);
+        });
     }
     public void searchByBook(){
          this.documentList.stream().filter(doc -> doc instanceof Book).forEach(doc -> System.out.println(doc.toString()));

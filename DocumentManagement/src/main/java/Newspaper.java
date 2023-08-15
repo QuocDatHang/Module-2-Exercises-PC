@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Newspaper extends Document {
     LocalDate dayIssue;
@@ -15,12 +16,13 @@ public class Newspaper extends Document {
     public void setDayIssue(LocalDate dayIssue) {
         this.dayIssue = dayIssue;
     }
+
     @Override
     public String toString() {
-        return "Journal {"
+        return "Newspaper {"
                 + "id = " + id + " | "
                 + "publisher = " + publisher + " | "
                 + "releaseNumber = " + releaseNumber + " | "
-                + "dayIssue = " + dayIssue + "} ";
+                + "dayIssue = " + dayIssue.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) + "} ";
     }
 }
