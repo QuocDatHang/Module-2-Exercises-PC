@@ -1,7 +1,10 @@
 import com.sun.xml.internal.bind.v2.schemagen.xmlschema.NestedParticle;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Collection;
+
 
 public class DocumentManagement {
     List<Document> documentList;
